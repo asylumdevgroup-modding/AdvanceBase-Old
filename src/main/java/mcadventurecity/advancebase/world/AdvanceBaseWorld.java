@@ -20,11 +20,11 @@ public class AdvanceBaseWorld implements IWorldGenerator {
 		}
 	}
 	private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		generateOre(AdvanceBaseBlocks.copperOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 20, 80, 4 + random.nextInt(5), 25);
-		generateOre(AdvanceBaseBlocks.tinOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 10, 64, 4 + random.nextInt(5), 23);
-		generateOre(AdvanceBaseBlocks.aluminumOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 30, 64, 4 + random.nextInt(5), 24);
-		generateOre(AdvanceBaseBlocks.leadOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 30, 4 + random.nextInt(5), 18);
-		generateOre(AdvanceBaseBlocks.silverOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 3, 4 + random.nextInt(5), 16);
+		generateOre(AdvanceBaseBlocks.copperOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 20, 80, 4 + random.nextInt(5), 8);
+		generateOre(AdvanceBaseBlocks.tinOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 10, 64, 4 + random.nextInt(5), 6);
+		generateOre(AdvanceBaseBlocks.aluminumOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 30, 64, 4 + random.nextInt(5), 7);
+		generateOre(AdvanceBaseBlocks.leadOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 30, 4 + random.nextInt(5), 5);
+		generateOre(AdvanceBaseBlocks.silverOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 3, 4 + random.nextInt(5), 4);
 	}
 	private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) {
 		int deltaY = maxY - minY;
