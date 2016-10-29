@@ -19,11 +19,11 @@ public class AdvanceBaseBlocks {
 	public static Block aluminumBlock;
 	
 	public static void init() {
-		copperOre = register(new BlockOre("copperOre", "oreCopper").setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
-		tinOre = register(new BlockOre("tinOre", "oreTin").setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
-		aluminumOre = register(new BlockOre("aluminumOre", "oreAluminum").setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
-		leadOre = register(new BlockOre("leadOre", "oreLead").setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
-		silverOre = register(new BlockOre("silverOre", "oreSilver").setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
+		copperOre = register(new BlockOre("copperOre", "oreCopper", 1).setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
+		tinOre = register(new BlockOre("tinOre", "oreTin", 1).setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
+		aluminumOre = register(new BlockOre("aluminumOre", "oreAluminum", 1).setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
+		leadOre = register(new BlockOre("leadOre", "oreLead", 2).setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
+		silverOre = register(new BlockOre("silverOre", "oreSilver", 2).setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
 		copperBlock = register(new BlockBase(Material.IRON, "copperBlock").setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
 		tinBlock = register(new BlockBase(Material.IRON, "tinBlock").setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
 		aluminumBlock = register(new BlockBase(Material.IRON, "aluminumBlock").setCreativeTab(AdvanceBaseTabs.tabAdvanceBase));
